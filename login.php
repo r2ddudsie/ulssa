@@ -8,7 +8,7 @@ session_start();
 <html lang="pt">
 
 <head>
-    <title>Dashboard CGM</title>
+    <title>Dashboard</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initialscale=1">
 
@@ -28,33 +28,30 @@ session_start();
                     <div class="col-4">
                         <div class="card">
                             <div class="card-body">
-                                <form>
-                                    <img id="login" class="rounded mx-auto d-block" width="200" height="200"
-                                        src="./Assets/Pictures/ulssa_login.png">
-                                    <h1 class="h3 mb-3 fw-normal">Acesso à Dashboard</h1>
+                            <form action="principal.php" method="POST">
+                                <img id="login" class="rounded mx-auto d-block" width="200" height="200"
+                                    src="./Assets/Pictures/ulssa_login.png">
+                                <h1 class="h3 mb-3 fw-normal">Acesso à Dashboard</h1>
 
-                                    <div class="form-group">
-                                        <input type="username" class="form-control" id="floatingInput"
-                                            placeholder="Username" name="username" required>
+                                <div class="form-group">
+                                    <input type="username" class="form-control" id="floatingInput"
+                                        placeholder="Username" name="username" required>
+                                </div>
+                                <p></p>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password" name="password" required>
+                                </div>
 
-                                    </div>
-                                    <p></p>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" id="floatingPassword"
-                                            placeholder="Password" name="password" required>
-
-                                    </div>
-
-                                    <div class="form-check text-start my-3">
-                                        <input class="form-check-input" type="checkbox" value="remember-me"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Lembrar-me
-                                        </label>
-                                    </div>
-                                    <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
-                                
-                                </form>
+                                <div class="form-check text-start my-3">
+                                    <input class="form-check-input" type="checkbox" value="remember-me"
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Lembrar-me
+                                    </label>
+                                </div>
+                                <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
+                            </form>
 
 
 
